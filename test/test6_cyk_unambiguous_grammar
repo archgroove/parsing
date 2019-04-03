@@ -1,0 +1,28 @@
+S -> E R | B M | a | b | c | d | 0 | 1 | 2 | 3
+L -> E R | B M | a | b | c | d | 0 | 1 | 2 | 3
+R -> E R | B M | a | b | c | d | 0 | 1 | 2 | 3
+E -> B M | a | b | c | d | 0 | 1 | 2 | 3
+B -> (
+M -> W D | F D
+D -> )
+W -> G X
+X -> H Y
+Y -> E Z
+Z -> E N | B M | a | b | c | d | 0 | 1 | 2 | 3
+G -> i
+H -> f
+N -> B M | a | b | c | d | 0 | 1 | 2 | 3
+F -> I L | J L | K L | O B'
+B' -> P C'
+C' -> G D'
+D' -> Q E'
+E' -> U L
+I -> +
+J -> -
+K -> *
+O -> p
+P -> r
+Q -> n
+U -> t
+V -> a | b | c | d
+T -> 0 | 1 | 2 | 3
